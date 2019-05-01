@@ -137,14 +137,19 @@ function gw2minion.Init()
 		ml_mesh_mgr.SetDefaultMesh(1171,"sPvp Coloseum")
 		ml_mesh_mgr.SetDefaultMesh(1305,"sPvP Djinns Dominion")
 		
-		
 		--PoF
 		ml_mesh_mgr.SetDefaultMesh(1210,"Crystal Oasis")
 		ml_mesh_mgr.SetDefaultMesh(1228,"Elon Riverlands")
 		ml_mesh_mgr.SetDefaultMesh(1211,"Desert Highlands")
 		ml_mesh_mgr.SetDefaultMesh(1226,"The Desolation")
 		
-		
+		-- Living World Season 4
+		ml_mesh_mgr.SetDefaultMesh(1310,"Thunderhead Peaks")
+		ml_mesh_mgr.SetDefaultMesh(1301,"Jahai Bluffs")
+		ml_mesh_mgr.SetDefaultMesh(1288,"Domain of Kourna")
+		ml_mesh_mgr.SetDefaultMesh(1271,"Sandswept Isles")
+		ml_mesh_mgr.SetDefaultMesh(1263,"Domain of Istan")
+				
 		--Instances
 		ml_mesh_mgr.SetDefaultMesh(896,"North Noland Hatchery") -- Diessa Plateau
 		ml_mesh_mgr.SetDefaultMesh(866,"Mad Kings Labyrinth")
