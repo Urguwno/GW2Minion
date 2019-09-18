@@ -166,6 +166,7 @@ function ml_navigation.Navigate(event, ticks )
 											Player:SetFacingExact(nextnode.x,nextnode.y,nextnode.z,true)
 										elseif ( Player:IsMoving() and ticks - ml_navigation.omc_starttimer > 100 ) then
 											Player:Jump()
+											d("[Navigation] - Trying to jump. This will dismount if mounted.")
 										end
 										
 									else
