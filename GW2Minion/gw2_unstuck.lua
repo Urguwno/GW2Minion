@@ -677,13 +677,13 @@ end
 -- Stuck handlers for reuse
 gw2_unstuck.stuckhandlers = {}
 function gw2_unstuck.stuckhandlers.simplejump()
-	d("[Unstuck]: Trying to jump.")
+	d("[Unstuck]: Trying to jump. This will dismount if mounted.")
 	Player:Jump()
 	return true
 end
 
 function gw2_unstuck.stuckhandlers.jump()
-	d("[Unstuck]: Trying to jump.")
+	d("[Unstuck]: Trying to jump. This will dismount if mounted.")
 	gw2_unstuck.stuckhandlers.moveforward()
 	Player:Jump()
 	return true
