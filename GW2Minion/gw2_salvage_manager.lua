@@ -16,11 +16,11 @@ gw2_salvage_manager.salvageKitList = {
 		{name = GetString("journeymanKit"),		id = "journeymankit",	itemid = 23042,		rarity = 3,},	-- Journeyman (rarity 3)
 		{name = GetString("masterKit"),			id = "masterkit",		itemid = 23043,		rarity = 4,},	-- Master (rarity 4)
 		-- special kits
-		{name = GetString("mysticKit"),			id = "mystickit",		itemid = 23045,		rarity = 4,},	-- Mystic Kit (rarity 4)
+		-- {name = GetString("mysticKit"),			id = "mystickit",		itemid = 23045,		rarity = 4,},	-- Mystic Kit (rarity 4)
 		{name = GetString("copperfedKit"),		id = "copperfedkit",	itemid = 44602,		rarity = 1,},	-- Copper-Fed Kit (rarity 1)
 		{name = GetString("runecrafterkit"),	id = "runecrafterkit",	itemid = 89409,		rarity = 5,},	-- Runecrafter Kit (rarity 1)
 		{name = GetString("silverfedKit"),		id = "silverfedkit",	itemid = 67027,		rarity = 4,},	-- Silver-Fed Kit (rarity 4)
-		{name = GetString("blacklionKit"),		id = "blacklionkit",	itemid = 19986,		rarity = 5,},	-- Black Lion Kit (Rarity 5)
+		-- {name = GetString("blacklionKit"),		id = "blacklionkit",	itemid = 19986,		rarity = 5,},	-- Black Lion Kit (Rarity 5)
 	},
 	kitlist = {}, -- [itemID] = {name = stringid, rarity = rarity}
 	nameList = {}, -- [key] = name
@@ -109,6 +109,8 @@ function gw2_salvage_manager.mainWindow.Draw(event,ticks)
 			GUI:BeginGroup()
 			gw2_salvage_manager.active = GUI:Checkbox(GetString("active"), gw2_salvage_manager.active)
 			Settings.gw2_salvage_manager.active = gw2_salvage_manager.active
+			GUI:Text("Supported Kits: Crude - Masters")
+			GUI:Text("Copper & Silver-Fed + Runecrafter")
 			GUI:EndGroup()
 			if (GUI:IsItemHovered() and gw2_salvage_manager.toolTip) then
 				GUI:SetTooltip("Turn Salvaging on or off.")
